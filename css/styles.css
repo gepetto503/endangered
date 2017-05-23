@@ -2,8 +2,6 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /*margin: 0px;
-  padding: 0px;*/
 }
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -46,12 +44,9 @@ h1 {
 
 .animal { /* div for animal pic and info, child of .map */
   width: 200px;
-  /*height: 200px;*/
   background: rgba(100, 100, 100, 0.5);
-  /*border-radius: 50%;*/
-  /*text-align: center;*/
-  padding: 1%; /* remember, this % is of the parent (map) element */
-  font-size: 8px;
+  padding: 10px;
+  font-size: 12px;
   color: white;
   overflow: hidden;
   border-radius: 0% 25% 25% 25%;
@@ -59,8 +54,7 @@ h1 {
 }
 
 .animal_img {
-  width: 50%;
-  height: auto;
+  width: 50%; /* 50 % of animal div which is 200px */
   border-radius: 50%;
   float: left;
   margin: 5px;
@@ -77,4 +71,10 @@ top: 50%;
 position: absolute;
 left: 78%;
 top: 62%;
+}
+
+#appenine-chamois {
+position: absolute;
+left: 51%;
+top: 37%;
 }
