@@ -52,19 +52,20 @@ h1 {
 }
 
 .animal { /* div for animal pic and info, child of .map */
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
+  width: 10%;
   position: absolute;
   left: 55%;
   top: 40%;
   background: rgba(100, 100, 100, 0.5);
-  border-radius: 50%;
-  text-align: center;
-  padding: 1%;
+  /*border-radius: 50%;*/
+  /*text-align: center;*/
+  padding: 1%; /* remember, this % is of the parent (map) element */
+  font-size: 8px;
+  color: white;
 }
 
 .animal_img {
-  width: 100px;
-  border-radius: 50px;
+  width: 50%;
+  border-radius: 50%;
+  float: left;
 }
