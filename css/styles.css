@@ -42,7 +42,7 @@ h1 {
   width: 100%; /* map image isalways 100 percent of map div width, which is defined by the page/viewport */
 }
 
-.animal-down { /* div for animal pic and info, child of .map */
+.animal-down-right { /* div for animal pic and info, child of .map */
   width: 200px;
   background: rgba(100, 100, 100, 0.5);
   padding: 10px;
@@ -50,6 +50,16 @@ h1 {
   color: white;
   overflow: hidden;
   border-radius: 0% 25% 25% 25%;
+}
+
+.animal-down-left { /* div for animal pic and info, child of .map */
+  width: 200px;
+  background: rgba(100, 100, 100, 0.5);
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  overflow: hidden;
+  border-radius: 25% 0% 25% 25%;
 }
 
 .animal-up {
@@ -103,8 +113,8 @@ h1 {
 #agile-gibbon {
   display: none;
   position: absolute;
-  left: 81%;
-  top: 65%;
+  left: 64%;
+  top: 66%;
 }
 
 #chamois-icon {
@@ -124,4 +134,23 @@ h1 {
   position: absolute;
   left: 55%;
   bottom: 60%;
+}
+
+#wallaby-icon {
+  border-radius: 50%;
+  width: 3%;
+  position: absolute;
+  left: 84%;
+  top: 62%;
+}
+
+#wallaby-icon:hover + #wallaby{
+  display: block;
+}
+
+#wallaby {
+  display: none;
+  position: absolute;
+  left: 87%;
+  bottom: 37%;
 }
