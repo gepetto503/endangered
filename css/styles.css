@@ -1,8 +1,31 @@
-.container {
-  padding: 40px;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*margin: 0px;
+  padding: 0px;*/
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*.bg {
+  height: 100vh;
+  background: url("../img/world-map-silhouette.svg") center center no-repeat fixed;
+  background-size: cover;
+  padding: 100px;
+}*/
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .masthead {
+  /*position: fixed;*/
+  width: 100%;
   background-color: black;
   color: white;
   text-align: center;
@@ -10,9 +33,38 @@
   font-size: 50px;
 }
 
-.map {
+.container { /* just some padding around everything but masthead */
+  padding: 40px;
+}
+
+.map { /* inside of container, parent of map image and animal divs */
   position: relative;
-  width: 90vw;
+  /*top: 100px;*/
+  /*width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+}
+
+.map_img { /* so far this just applies to map image inside map div */
+  margin: 0 auto;   /*centers image inside .map div*/
+  display: block; /* don't know what this is doing */
+  width: 100%; /* map image isalways 100 percent of map div width, which is defined by the page/viewport */
+}
+
+.animal { /* div for animal pic and info, child of .map */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  background: rgba(100, 100, 100, 0.5);
+  border-radius: 50%;
+  text-align: center;
+  padding: 1%;
+}
+
+.animal_img {
+  width: 100px;
+  border-radius: 50px;
 }
