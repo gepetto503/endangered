@@ -24,32 +24,31 @@ h1 {
   font-size: 50px;
 }
 
-.container { /* just some padding around everything but masthead */
+.container { /* just some padding around everything but the masthead */
   padding: 40px;
 }
 
 .map { /* inside of container, parent of map image and animal divs */
   position: relative;
-  /*top: 100px;*/
-  /*width: 100%;
-  margin-left: auto;
-  margin-right: auto;*/
 }
 
-.map_img { /* so far this just applies to map image inside map div */
+.map_img { /* map image itself */
   margin: 0 auto;   /*centers image inside .map div*/
   display: block; /* don't know what this is doing */
   width: 100%; /* map image isalways 100 percent of map div width, which is defined by the page/viewport */
 }
 
-.animal-down-right { /* div for animal pic and info, child of .map */
+
+/* styling classes applied to the animal divs, depending on where the div should pop up in relation to the icon*/
+
+.animal-down-right {
   width: 200px;
   background: rgba(100, 100, 100, 0.5);
   padding: 10px;
   font-size: 12px;
   color: white;
   overflow: hidden;
-  border-radius: 0% 25% 25% 25%;
+  border-radius: 0% 25% 25% 25%; /* the top left corner is a point */
 }
 
 .animal-down-left { /* div for animal pic and info, child of .map */
@@ -72,6 +71,7 @@ h1 {
   border-radius: 25% 25% 25% 0%;
 }
 
+/* styling of the image inside of the animal div*/
 .animal_img {
   width: 60%; /* 50 % of animal div which is 200px */
   border-radius: 50%;
@@ -79,23 +79,14 @@ h1 {
   margin: 5px;
 }
 
+
+/* this is how the icons are positioned */
 #lion-icon {
   border-radius: 50%;
   width: 3%;
   position: absolute;
   left: 55%;
   top: 50%;
-}
-
-#lion-icon:hover + #african-lion{
-  display: block;
-}
-
-#african-lion {
-  display: none;
-  position: absolute;
-  left: 57%;
-  top: 55%;
 }
 
 #gibbon-icon {
@@ -106,34 +97,12 @@ h1 {
   top: 62%;
 }
 
-#gibbon-icon:hover + #agile-gibbon{
-  display: block;
-}
-
-#agile-gibbon {
-  display: none;
-  position: absolute;
-  left: 64%;
-  top: 66%;
-}
-
 #chamois-icon {
   border-radius: 50%;
   width: 3%;
   position: absolute;
   left: 51%;
   top: 37%;
-}
-
-#chamois-icon:hover + #appenine-chamois{
-  display: block;
-}
-
-#appenine-chamois {
-  display: none;
-  position: absolute;
-  left: 55%;
-  bottom: 60%;
 }
 
 #wallaby-icon {
@@ -144,8 +113,43 @@ h1 {
   top: 62%;
 }
 
+/* this is how the div pops up when you hover over the icon */
+#lion-icon:hover + #african-lion{
+  display: block;
+}
+
+#gibbon-icon:hover + #agile-gibbon{
+  display: block;
+}
+
+#chamois-icon:hover + #appenine-chamois{
+  display: block;
+}
+
 #wallaby-icon:hover + #wallaby{
   display: block;
+}
+
+/* this is how i positioned the actual divs*/
+#african-lion {
+  display: none;
+  position: absolute;
+  left: 57%;
+  top: 55%;
+}
+
+#agile-gibbon {
+  display: none;
+  position: absolute;
+  left: 64%;
+  top: 66%;
+}
+
+#appenine-chamois {
+  display: none;
+  position: absolute;
+  left: 55%;
+  bottom: 60%;
 }
 
 #wallaby {
