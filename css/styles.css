@@ -50,31 +50,56 @@ h1 {
   color: white;
   overflow: hidden;
   border-radius: 0% 25% 25% 25%;
-
 }
 
 .animal_img {
-  width: 50%; /* 50 % of animal div which is 200px */
+  width: 60%; /* 50 % of animal div which is 200px */
   border-radius: 50%;
   float: left;
   margin: 5px;
 }
 
+#lion-icon {
+  border-radius: 50%;
+  width: 3%;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+}
+
+#lion-icon:hover + #african-lion{
+  display: block;
+}
 
 #african-lion {
-position: absolute;
-left: 55%;
-top: 50%;
+  display: none;
+  position: absolute;
+  left: 57%;
+  top: 55%;
+}
+
+#gibbon-icon {
+  border-radius: 50%;
+  width: 3%;
+  position: absolute;
+  left: 78%;
+  top: 62%;
+}
+
+#gibbon-icon:hover + #agile-gibbon{
+  display: block;
 }
 
 #agile-gibbon {
-position: absolute;
-left: 78%;
-top: 62%;
+  display: none;
+  position: absolute;
+  left: 81%;
+  top: 65%;
 }
 
 #appenine-chamois {
-position: absolute;
-left: 51%;
-top: 37%;
+  display: none;
+  position: absolute;
+  left: 51%;
+  top: 37%;
 }
